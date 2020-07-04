@@ -1,6 +1,4 @@
-import 'package:birthday/wishes.dart';
 import 'package:flutter/material.dart';
-import 'package:page_transition/page_transition.dart';
 
 class CardTemp extends StatelessWidget {
   CardTemp({@required this.text, this.onPressed,this.size});

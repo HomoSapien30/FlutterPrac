@@ -11,18 +11,21 @@ class _ImagesState extends State<Images> {
   CarouselSlider carouselSlider;
   int _current=0;
   List imgList=[
-    'assets/download.jpg',
-    'assets/download.jpg',
-    'assets/download.jpg',
-    'assets/download.jpg',
-    'assets/download.jpg',
-    'assets/download.jpg',
-    'assets/download.jpg',
-    'assets/download.jpg',
-    'assets/download.jpg',
-    'assets/download.jpg',
-    'assets/download.jpg',
-    'assets/download.jpg'
+    'assets/nikita.jpg',
+    'assets/muskn2.jpg',
+    'assets/dhruv.jpg',
+    'assets/charu.jpg',
+    'assets/vaibhav.jpg',
+    'assets/us3.jpg',
+    'assets/harsh.jpg',
+    'assets/aki.jpg',
+    'assets/sari.jpg',
+    'assets/bhanu.jpg',
+    'assets/nav.jpg',
+    'assets/pra.jpg',
+    'assets/ktj.jpg',
+    'assets/brij.jpg',
+    'assets/rajjo.jpg'
   ];
   List<T> map<T>(List list, Function handler) {
     List<T> result = [];
@@ -65,7 +68,7 @@ class _ImagesState extends State<Images> {
                           color: Colors.green,
                           image:DecorationImage(
                           image: AssetImage(imgUrl),
-                          fit: BoxFit.cover
+                          fit: BoxFit.fill
                         )
                       ),
 

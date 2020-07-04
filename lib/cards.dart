@@ -1,11 +1,13 @@
 import 'dart:ui';
 import 'package:birthday/card_temp.dart';
 import 'package:birthday/images.dart';
-import 'package:birthday/people.dart';
+import 'package:birthday/memories.dart';
 import 'package:page_transition/page_transition.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+
+import 'Profile.dart';
 
 class Cards extends StatefulWidget {
   @override
@@ -114,20 +116,20 @@ class _CardsState extends State<Cards> {
                     children: <Widget>[
                       IconButton(
                         icon: Icon(Icons.arrow_back_ios),
-                        iconSize: 80,
+                        iconSize: 50,
                         color: Colors.white,
                         onPressed: ()
                         {
                           Navigator.of(context).push(PageTransition(
                             type: PageTransitionType.leftToRight,
-                            child: People(),
+                            child: Memories(),
                           ));
                         },
                       ),
 
                       IconButton(
                         icon: Icon(Icons.arrow_forward_ios),
-                        iconSize: 80,
+                        iconSize: 50,
                         color: Colors.white,
                         onPressed: ()
                         {
@@ -139,7 +141,23 @@ class _CardsState extends State<Cards> {
                       )
                     ]
                 ),
-
+                Row(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                  children: <Widget>[
+                    IconButton(
+                      icon: Icon(Icons.expand_more),
+                      iconSize: 100,
+                      color: Colors.white,
+                      onPressed: ()
+                      {
+                        Navigator.push(context, PageTransition(
+                          type: PageTransitionType.rightToLeft,
+                          child: Profile(),
+                        ));
+                      },
+                    )
+                  ],
+                )
               ],
             ),
           )
@@ -147,3 +165,4 @@ class _CardsState extends State<Cards> {
     );
   }
 }
+
