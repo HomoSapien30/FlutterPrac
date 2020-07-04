@@ -22,6 +22,7 @@ dependencies:
   flutter_launcher_icons: ^0.7.2+1
   google_fonts:
   page_transition: "^1.1.5"
+  url_launcher:
   flutter:
     sdk: flutter
 
