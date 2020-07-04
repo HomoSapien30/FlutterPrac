@@ -1,6 +1,5 @@
 import 'dart:ui';
 import 'package:birthday/card_temp.dart';
-import 'package:birthday/images.dart';
 import 'package:birthday/memories.dart';
 import 'package:page_transition/page_transition.dart';
 import 'package:flutter/cupertino.dart';
@@ -8,6 +7,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 
 import 'Profile.dart';
+import 'corsel.dart';
 
 class Cards extends StatefulWidget {
   @override
@@ -135,7 +135,7 @@ class _CardsState extends State<Cards> {
                         {
                           Navigator.push(context, PageTransition(
                             type: PageTransitionType.rightToLeft,
-                            child: Images(),
+                            child: Corsel(),
                           ));
                         },
                       )
