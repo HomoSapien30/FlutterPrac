@@ -31,6 +31,16 @@ class _SplashState extends State<Splash> with SingleTickerProviderStateMixin{
   }
   @override
   Widget build(BuildContext context) {
-    return Text("Hello");
+    return Container(
+      width: MediaQuery.of(context).size.width,
+      decoration: BoxDecoration(
+          borderRadius: BorderRadius.circular(5),
+          color: Colors.white,
+          image:DecorationImage(
+              image: AssetImage('assets/snehaaa.jpeg'),
+              fit: BoxFit.fill
+          )
+      ),
+    );
   }
 }
