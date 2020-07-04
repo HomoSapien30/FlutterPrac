@@ -43,7 +43,7 @@ class _ImagesState extends State<Images> {
   }
 
   zoom(String imgUrl) async {
-    const url = "https://flutter.dev";
+    const url = "https://us04web.zoom.us/j/6258539667?pwd=UjZGMS91MDE4ZHZmL3UxUVY2QkZZdz09";
     if (imgUrl == 'assets/surprise.jpg') {
       print("hello");
       if (await canLaunch(url)) {
